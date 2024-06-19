@@ -1,0 +1,53 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+# Built application files
+*.apk
+*.ap_
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# ProGuard files
+proguard/
+
+# Android Studio
+*.iml
+.idea/
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Signing files
+signing.properties
+
+# Windows thumbnail db
+Thumbs.db
+
+# macOS DS_Store files
+.DS_Store
+
+# Firebase configuration file
+google-services.json
+
+# Crashlytics configuration file
+crashlytics.properties

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewSongActivity">
+
+    <Button
+        android:id="@+id/update_song_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="248dp"
+        android:text="UPDATE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Song_Categories_Spinner"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/Song_Categories_Spinner"
+        app:layout_constraintTop_toBottomOf="@+id/Song_Categories_Spinner"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/Back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Isr_edit_Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Réaliser Le"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/Title_edittxt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/Title_edittxt"
+        app:layout_constraintTop_toBottomOf="@+id/Title_edittxt" />
+
+    <EditText
+        android:id="@+id/artist_edittxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:ems="10"
+        android:hint="Artiste"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Title_edittxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Song Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/artist_edittxt"
+        app:layout_constraintStart_toStartOf="@+id/artist_edittxt"
+        app:layout_constraintTop_toBottomOf="@+id/artist_edittxt" />
+
+    <Button
+        android:id="@+id/delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="DELETE"
+        app:layout_constraintBottom_toTopOf="@+id/Back_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_song_btn" />
+
+    <Spinner
+        android:id="@+id/Song_Categories_Spinner"
+        android:layout_width="207dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginBottom="43dp"
+        android:entries="@array/book_Categories"
+        app:layout_constraintBottom_toTopOf="@+id/update_song_btn"
+        app:layout_constraintEnd_toEndOf="@+id/Isr_edit_Txt"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="@+id/Isr_edit_Txt"
+        app:layout_constraintTop_toTopOf="@+id/Isr_edit_Txt" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="190dp"
+        android:layout_height="31dp"
+        android:lineSpacingExtra="18sp"
+        android:text="UPDATE SONG"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="48dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
